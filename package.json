@@ -1,0 +1,22 @@
+{
+  "name": "alarm-clock-fun",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jenessawhite/alarm-clock-fun.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jenessawhite/alarm-clock-fun/issues"
+  },
+  "homepage": "https://github.com/jenessawhite/alarm-clock-fun#readme",
+  "dependencies": {
+    "moment": "^2.18.1"
+  }
+}
