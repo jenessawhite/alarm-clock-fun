@@ -4,15 +4,41 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Megrim|Raleway:500" rel="stylesheet">
   <link rel="stylesheet" href="/styles/index.css">
   <title>alarm-clock-fun</title>
 </head>
 <body>
+  <audio id="sound">
+    <source src="assets/synth-alarm.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
   <div class="intro">
     <h1>alarm-clock-fun</h1>
     <h2>this is a digital alarm clock built using <a href="https://momentjs.com/" target="_blank">Moment.js</a></h2>
   </div>
-  <div id='clock'></div>
+  <div class="clock-container">
+    <div class='clock'> </div>
+    <div class='meridiemDiv'></div>
+  </div>
+  <div id="alarm">
+    <h1>ALARM IS UP!</h1>
+  </div>
+  <div class="alarm-set"></div>
+  <h2>Set your Alarm Clock:</h2>
+  <form id="alarm-form" class="form-inline">
+    <div class="form-group">
+      <label for="hour"></label>
+      <input id="hour" type="number" placeholder="12" class="form-control">
+    </div>
+    <div class="form-group">
+      <label for="minute"></label>
+      <input id="minute" type="number" placeholder="00" class="form-control">
+    </div>
+    <button class="btn btn-default" type="submit">SET</button>
+  </form>
+
 
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>

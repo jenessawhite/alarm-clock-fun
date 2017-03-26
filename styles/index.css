@@ -1,0 +1,42 @@
+body {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-family: 'Raleway';
+  background-color: #343844;
+  color: #2AB69D;
+}
+
+a {
+  text-decoration: none;
+  color: #2AB69D;
+  font-style: italic;
+}
+
+a:hover, a:visited {
+  color: #FDC536;
+}
+
+.intro {
+}
+
+.clock-container {
+  display: flex;
+  justify-content: center;
+}
+
+.clock {
+  font-family: 'Megrim';
+  font-size: 8rem;
+  color: #E65848;
+}
+
+.meridiemDiv {
+  font-size: 4rem;
+  align-self: flex-end;
+}
+
+#button {
+  width: 10em;
+  margin: 0 auto;
+}
