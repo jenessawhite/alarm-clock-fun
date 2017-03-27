@@ -30,15 +30,16 @@
   <form id="alarm-form" class="form-inline">
     <div class="form-group">
       <label for="hour"></label>
-      <input id="hour" type="number" placeholder="12" class="form-control">
-    </div>
-    <div class="form-group">
+      <input id="hour" type="number" min="1" max="24" placeholder="12" class="form-control">
       <label for="minute"></label>
-      <input id="minute" type="number" placeholder="00" class="form-control">
+      <input id="minute" type="number" min="0" max="59" placeholder="00" class="form-control">
+      <input type="button" onclick="clearForm()" value="Reset form">
     </div>
-    <button class="btn btn-default" type="submit">SET</button>
+
+    <button class="btn" type="submit">SET</button>
   </form>
 
+  <button class="btn snooze" onclick="snoozeAlarm()">SNOOZE</button>
 
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
