@@ -15,7 +15,7 @@
   "bugs": {
     "url": "https://github.com/jenessawhite/alarm-clock-fun/issues"
   },
-  "homepage": "https://github.com/jenessawhite/alarm-clock-fun#readme",
+  "homepage": "https://jenessawhite.github.io/alarm-clock-fun/",
   "dependencies": {
     "moment": "^2.18.1"
   }
